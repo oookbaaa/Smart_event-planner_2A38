@@ -28,7 +28,7 @@ private slots:
 
     void on_pushButton_Calendrier_clicked();
 
-    void on_pushButton_retour_clicked();
+
 
     void on_pushButton_retour_1_clicked();
 
@@ -39,6 +39,9 @@ private slots:
     void on_pushButton_retour_4_clicked();
 
     void on_pushButton_retour_5_clicked();
+
+    void on_pushButton_retour_6_clicked();
+
 
 //Boutons pour acceder aux operations ********************
     void on_pushButton_ajouter_ev_clicked();
@@ -53,14 +56,13 @@ private slots:
 
     void on_pushButton_supprimer_vrai_clicked();
 
-
-
-
     void on_pushButton_modifier_vrai_clicked();
 
     void on_pushButton_modifier_vrai_2_clicked();
 
-    void on_pushButton_retour_6_clicked();
+    void on_pushButton_trier_vrai_clicked();
+
+    void on_pushButton_chercher_vrai_clicked();
 
 private:
     Ui::MainWindow *ui;

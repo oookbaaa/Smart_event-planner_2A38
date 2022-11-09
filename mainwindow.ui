@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1223</width>
-    <height>624</height>
+    <width>1222</width>
+    <height>621</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -913,7 +913,7 @@ color: rgb(120,120,120);</string>
      <item>
       <widget class="QStackedWidget" name="stackedWidget">
        <property name="currentIndex">
-        <number>0</number>
+        <number>4</number>
        </property>
        <widget class="QWidget" name="page_6">
         <widget class="QFrame" name="frame_12">
@@ -1164,7 +1164,7 @@ QPushButton::pressed
         <widget class="QPushButton" name="pushButton_Eliminer_ev">
          <property name="geometry">
           <rect>
-           <x>640</x>
+           <x>630</x>
            <y>420</y>
            <width>220</width>
            <height>101</height>
@@ -1179,7 +1179,7 @@ QPushButton::pressed
          <property name="maximumSize">
           <size>
            <width>220</width>
-           <height>220</height>
+           <height>230</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -1191,7 +1191,7 @@ QPushButton::pressed
  border-radius:50px;
  border-color:white;
  max-width:200px;
- max-height:200px;
+ max-height:210px;
  min-width:100px;
  min-height:80px;
 
@@ -1219,13 +1219,17 @@ QPushButton::pressed
          <property name="text">
           <string>ELIMINER UN EVENEMENT</string>
          </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../../../Downloads/delete.png</normaloff>../../../../../Downloads/delete.png</iconset>
+         </property>
         </widget>
         <widget class="QPushButton" name="pushButton_liste_ev">
          <property name="geometry">
           <rect>
-           <x>350</x>
+           <x>330</x>
            <y>420</y>
-           <width>211</width>
+           <width>220</width>
            <height>100</height>
           </rect>
          </property>
@@ -1238,7 +1242,7 @@ QPushButton::pressed
          <property name="maximumSize">
           <size>
            <width>220</width>
-           <height>220</height>
+           <height>230</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -1249,7 +1253,7 @@ QPushButton::pressed
  border-radius:50px;
  border-color: #FF5D5D;
  max-width:200px;
- max-height:200px;
+ max-height:210px;
  min-width:100px;
  min-height:80px;
 
@@ -1275,6 +1279,10 @@ QPushButton::pressed
          <property name="text">
           <string>LISTE DES EVENEMENTS</string>
          </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../../../Downloads/file.png</normaloff>../../../../../Downloads/file.png</iconset>
+         </property>
         </widget>
         <widget class="QPushButton" name="pushButton_ajouter_ev">
          <property name="geometry">
@@ -1294,7 +1302,7 @@ QPushButton::pressed
          <property name="maximumSize">
           <size>
            <width>220</width>
-           <height>220</height>
+           <height>230</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -1305,7 +1313,7 @@ background-color: #FF5D5D;
  border-radius:50px;
  border-color:white ;
  max-width:200px;
- max-height:200px;
+ max-height:210px;
  min-width:100px;
  min-height:80px;
 
@@ -1330,6 +1338,10 @@ QPushButton::pressed
          </property>
          <property name="text">
           <string>AJOUTER UN EVENEMENT</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../../../Downloads/add.png</normaloff>../../../../../Downloads/add.png</iconset>
          </property>
         </widget>
        </widget>
@@ -1357,102 +1369,22 @@ QPushButton::pressed
           </size>
          </property>
         </widget>
-        <widget class="QScrollBar" name="verticalScrollBar_4">
+        <widget class="QTableView" name="tableView_his">
          <property name="geometry">
           <rect>
-           <x>860</x>
-           <y>30</y>
-           <width>21</width>
-           <height>421</height>
+           <x>20</x>
+           <y>40</y>
+           <width>861</width>
+           <height>391</height>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">QScrollBar:vertical 
-{
-    background-color: transparent;
-    width: 8px;
-    margin: 0;
-
-}
-
-
-QScrollBar::handle:vertical 
-{
-    border: none;
-	min-height: 100px;
-    background-color: #56576c;
-
-}
-
-
-QScrollBar::add-line:vertical, 
-QScrollBar::sub-line:vertical,
-QScrollBar::add-page:vertical, 
-QScrollBar::sub-page:vertical 
-{
-    height: 0px;
-    background-color: transparent;
-
-}</string>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-        </widget>
-        <widget class="QTreeWidget" name="treeWidget_4">
-         <property name="geometry">
-          <rect>
-           <x>40</x>
-           <y>30</y>
-           <width>841</width>
-           <height>421</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 93, 93);</string>
-         </property>
-         <column>
-          <property name="text">
-           <string>Type d'evenement </string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Date d'evenement</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Nom d'evenement</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Ajouter par </string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Date d'ajout</string>
-          </property>
-         </column>
-        </widget>
-        <widget class="QTableView" name="tableView_4">
-         <property name="geometry">
-          <rect>
-           <x>40</x>
-           <y>30</y>
-           <width>841</width>
-           <height>421</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">/*-----QTableView &amp; QTableWidget-----*/
+          <string notr="true">/*-----QTableView-----*/
 
 QTableView
 {
-    background-color: #232939;
-    border: 1px solid gray;
+    background-color: rgb(255, 93,93);
+    border: 7px solid #0ab19a;
     color: #f0f0f0;
     gridline-color: #232939;
     outline : 0;
@@ -1469,7 +1401,14 @@ QTableView::disabled
     outline : 0;
 
 }
+QTableView::item
+{
+font-size: 13px;
+font-weight: bold;
+color: white;
 
+
+}
 
 QTableView::item:hover 
 {
@@ -1493,13 +1432,94 @@ QTableView::item:selected:disabled
     border: 2px solid #525251;
     color: #656565;
 
+}
+
+QScrollBar:vertical 
+{
+    background-color: transparent;
+    width: 8px;
+    margin: 0;
+
+}
+
+/*-----QScrollBar-----*/
+QScrollBar::handle:vertical 
+{
+    border: none;
+	min-height: 100px;
+    background-color: #56576c;
+
+}
+
+
+QScrollBar::add-line:vertical, 
+QScrollBar::sub-line:vertical,
+QScrollBar::add-page:vertical, 
+QScrollBar::sub-page:vertical 
+{
+    height: 0px;
+    background-color: transparent;
+
 }</string>
          </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>140</number>
+         </attribute>
         </widget>
-        <zorder>pushButton_retour_1</zorder>
-        <zorder>tableView_4</zorder>
-        <zorder>treeWidget_4</zorder>
-        <zorder>verticalScrollBar_4</zorder>
+        <widget class="QPushButton" name="pushButton_PDF">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>440</y>
+           <width>100</width>
+           <height>100</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{ 
+background-color: #FF5D5D;
+ border-style: solid;
+ border-width:5px;
+ border-radius:50px;
+ border-color:white ;
+ max-width:80px;
+ max-height:80px;
+ min-width:80px;
+ min-height:80px;
+
+color: #ffffff;
+	font-size: 15px;
+	font-weight: bold;
+
+	padding: 5px;
+}
+QPushButton::hover
+{
+background-color: white;
+border-color: #FF5D5D;
+	color: #FF5D5D; 
+}
+QPushButton::pressed
+{background-color: qlineargradient(stop:0 rgba(0, 207, 179, 255),stop:1 rgba(70, 255, 230, 255));
+
+	color: black; 
+
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../../../Downloads/symbole-de-format-de-fichier-pdf.png</normaloff>../../../../../Downloads/symbole-de-format-de-fichier-pdf.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+        </widget>
        </widget>
        <widget class="QWidget" name="page_7">
         <widget class="QPushButton" name="pushButton_retour_2">
@@ -1546,8 +1566,8 @@ text-decoration: underline;</string>
           <widget class="QLineEdit" name="lineEdit_NOM_EV">
            <property name="geometry">
             <rect>
-             <x>180</x>
-             <y>90</y>
+             <x>190</x>
+             <y>130</y>
              <width>251</width>
              <height>26</height>
             </rect>
@@ -1572,8 +1592,8 @@ QLineEdit
           <widget class="QLineEdit" name="lineEdit_TYPE_EV">
            <property name="geometry">
             <rect>
-             <x>180</x>
-             <y>250</y>
+             <x>190</x>
+             <y>290</y>
              <width>251</width>
              <height>26</height>
             </rect>
@@ -1598,8 +1618,8 @@ QLineEdit
           <widget class="QLabel" name="label_nom_ev">
            <property name="geometry">
             <rect>
-             <x>30</x>
-             <y>80</y>
+             <x>40</x>
+             <y>120</y>
              <width>211</width>
              <height>41</height>
             </rect>
@@ -1628,8 +1648,8 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, st
           <widget class="QLabel" name="label_type_ev">
            <property name="geometry">
             <rect>
-             <x>30</x>
-             <y>240</y>
+             <x>40</x>
+             <y>280</y>
              <width>221</width>
              <height>41</height>
             </rect>
@@ -1658,8 +1678,8 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, st
           <widget class="QLabel" name="label_date_ev">
            <property name="geometry">
             <rect>
-             <x>30</x>
-             <y>160</y>
+             <x>40</x>
+             <y>200</y>
              <width>211</width>
              <height>41</height>
             </rect>
@@ -1689,8 +1709,8 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, st
           <widget class="QLabel" name="label_cin_ev">
            <property name="geometry">
             <rect>
-             <x>30</x>
-             <y>320</y>
+             <x>40</x>
+             <y>360</y>
              <width>221</width>
              <height>41</height>
             </rect>
@@ -1719,8 +1739,8 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, st
           <widget class="QLineEdit" name="lineEdit_CIN_EV_aj">
            <property name="geometry">
             <rect>
-             <x>180</x>
-             <y>330</y>
+             <x>190</x>
+             <y>370</y>
              <width>251</width>
              <height>26</height>
             </rect>
@@ -1798,8 +1818,8 @@ QPushButton::pressed
           <widget class="QDateTimeEdit" name="dateEdit_DATE_EV">
            <property name="geometry">
             <rect>
-             <x>180</x>
-             <y>170</y>
+             <x>190</x>
+             <y>210</y>
              <width>251</width>
              <height>26</height>
             </rect>
@@ -1828,6 +1848,121 @@ QDateTimeEdit
             </datetime>
            </property>
           </widget>
+          <widget class="QLabel" name="label_id_ev">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>40</y>
+             <width>211</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*-----QLabel-----*/
+QLabel
+{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(0,0,0,0));
+
+
+
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+	border: 5px;
+	border-radius:10px;
+	padding: 5px;
+
+}</string>
+           </property>
+           <property name="text">
+            <string>ID d'evenement :</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_ID_EV">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>50</y>
+             <width>251</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 2px;
+	padding: 3px;
+
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_NB_EV">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>450</y>
+             <width>251</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 2px;
+	padding: 3px;
+
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>8</number>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_nb_ev">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>440</y>
+             <width>221</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*-----QLabel-----*/
+QLabel
+{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(0,0,0,0));
+
+
+
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+	border: 5px;
+	border-radius:10px;
+	padding: 5px;
+
+}</string>
+           </property>
+           <property name="text">
+            <string>Nombre d'invite :</string>
+           </property>
+          </widget>
           <zorder>lineEdit_NOM_EV</zorder>
           <zorder>lineEdit_TYPE_EV</zorder>
           <zorder>label_nom_ev</zorder>
@@ -1837,13 +1972,17 @@ QDateTimeEdit
           <zorder>label_cin_ev</zorder>
           <zorder>pushButton_ajouter_vrai</zorder>
           <zorder>dateEdit_DATE_EV</zorder>
+          <zorder>label_id_ev</zorder>
+          <zorder>lineEdit_ID_EV</zorder>
+          <zorder>lineEdit_NB_EV</zorder>
+          <zorder>label_nb_ev</zorder>
          </widget>
          <widget class="QWidget" name="page_10">
           <widget class="QLabel" name="label_type_ev_mod">
            <property name="geometry">
             <rect>
              <x>10</x>
-             <y>300</y>
+             <y>270</y>
              <width>271</width>
              <height>41</height>
             </rect>
@@ -1873,7 +2012,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, st
            <property name="geometry">
             <rect>
              <x>220</x>
-             <y>70</y>
+             <y>350</y>
              <width>251</width>
              <height>26</height>
             </rect>
@@ -1902,7 +2041,7 @@ QLineEdit
            <property name="geometry">
             <rect>
              <x>10</x>
-             <y>60</y>
+             <y>340</y>
              <width>271</width>
              <height>41</height>
             </rect>
@@ -1932,7 +2071,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, st
            <property name="geometry">
             <rect>
              <x>220</x>
-             <y>150</y>
+             <y>140</y>
              <width>251</width>
              <height>26</height>
             </rect>
@@ -1958,7 +2097,7 @@ QLineEdit
            <property name="geometry">
             <rect>
              <x>220</x>
-             <y>230</y>
+             <y>210</y>
              <width>251</width>
              <height>26</height>
             </rect>
@@ -1991,7 +2130,7 @@ QDateTimeEdit
            <property name="geometry">
             <rect>
              <x>10</x>
-             <y>220</y>
+             <y>200</y>
              <width>281</width>
              <height>41</height>
             </rect>
@@ -2022,7 +2161,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, st
            <property name="geometry">
             <rect>
              <x>220</x>
-             <y>310</y>
+             <y>280</y>
              <width>251</width>
              <height>26</height>
             </rect>
@@ -2048,7 +2187,7 @@ QLineEdit
            <property name="geometry">
             <rect>
              <x>10</x>
-             <y>140</y>
+             <y>130</y>
              <width>281</width>
              <height>41</height>
             </rect>
@@ -2152,6 +2291,135 @@ text-decoration: underline;</string>
             </size>
            </property>
           </widget>
+          <widget class="QLineEdit" name="lineEdit_ID_EV_MOD">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>70</y>
+             <width>251</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 2px;
+	padding: 3px;
+
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_id_ev_MOD">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>60</y>
+             <width>271</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*-----QLabel-----*/
+QLabel
+{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(0,0,0,0));
+
+
+
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+	border: 5px;
+	border-radius:10px;
+	padding: 5px;
+
+}</string>
+           </property>
+           <property name="text">
+            <string>ID d'evenement :</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_NB_EV_mod">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>420</y>
+             <width>251</width>
+             <height>26</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 2px;
+	padding: 3px;
+
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>8</number>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_nb_ev_mod">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>410</y>
+             <width>261</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*-----QLabel-----*/
+QLabel
+{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(0,0,0,0));
+
+
+
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+	border: 5px;
+	border-radius:10px;
+	padding: 5px;
+
+}</string>
+           </property>
+           <property name="text">
+            <string>Nombre d'invite a modifier :</string>
+           </property>
+          </widget>
+          <zorder>lineEdit_CIN_EV_mod</zorder>
+          <zorder>label_cin_ev_mod</zorder>
+          <zorder>lineEdit_NOM_EV_mod</zorder>
+          <zorder>dateEdit_DATE_EV_mod</zorder>
+          <zorder>label_date_ev_mod</zorder>
+          <zorder>lineEdit_TYPE_EV_mod</zorder>
+          <zorder>label_nom_ev_mod</zorder>
+          <zorder>pushButton_modifier_vrai_2</zorder>
+          <zorder>pushButton_retour_6</zorder>
+          <zorder>lineEdit_ID_EV_MOD</zorder>
+          <zorder>label_id_ev_MOD</zorder>
+          <zorder>label_type_ev_mod</zorder>
+          <zorder>lineEdit_NB_EV_mod</zorder>
+          <zorder>label_nb_ev_mod</zorder>
          </widget>
          <widget class="QWidget" name="page_3">
           <widget class="QTableView" name="tableView_EV">
@@ -2160,7 +2428,7 @@ text-decoration: underline;</string>
              <x>30</x>
              <y>30</y>
              <width>841</width>
-             <height>321</height>
+             <height>331</height>
             </rect>
            </property>
            <property name="minimumSize">
@@ -2275,14 +2543,14 @@ QScrollBar::sub-page:vertical
             <bool>false</bool>
            </attribute>
            <attribute name="horizontalHeaderDefaultSectionSize">
-            <number>202</number>
+            <number>180</number>
            </attribute>
           </widget>
           <widget class="QPushButton" name="pushButton_modifier_vrai">
            <property name="geometry">
             <rect>
-             <x>400</x>
-             <y>380</y>
+             <x>760</x>
+             <y>400</y>
              <width>100</width>
              <height>100</height>
             </rect>
@@ -2327,6 +2595,216 @@ QPushButton::pressed
            <property name="text">
             <string>MODIFIER</string>
            </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../Downloads/system-update.png</normaloff>../../../../../Downloads/system-update.png</iconset>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="radioButton_date">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>440</y>
+             <width>171</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton {
+background-color:rgb(24,24,36);
+color: white;
+font:bold;
+}
+
+QRadioButton::indicator {
+width: 11px;
+height: 11px;
+border-radius: 5px;
+}
+
+QRadioButton::indicator::unchecked{ 
+border: 1px solid; 
+border-color: rgb(132,132,132);
+border-radius: 5px;
+background-color: white; 
+width: 11px; 
+height: 11px; 
+}
+
+QRadioButton::indicator::checked{ 
+border: 3px solid; 
+border-color: white;
+border-radius: 6px;
+background-color: #FF5D5D; 
+width: 7px; 
+height: 7px; 
+}</string>
+           </property>
+           <property name="text">
+            <string>Par date</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="radioButton_nb_inv">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>420</y>
+             <width>171</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton {
+background-color:rgb(24,24,36);
+color: white;
+font:bold;
+}
+
+QRadioButton::indicator {
+width: 11px;
+height: 11px;
+border-radius: 5px;
+}
+
+QRadioButton::indicator::unchecked{ 
+border: 1px solid; 
+border-color: rgb(132,132,132);
+border-radius: 5px;
+background-color: white; 
+width: 11px; 
+height: 11px; 
+}
+
+QRadioButton::indicator::checked{ 
+border: 3px solid; 
+border-color: white;
+border-radius: 6px;
+background-color:#FF5D5D; 
+width: 7px; 
+height: 7px; 
+}</string>
+           </property>
+           <property name="text">
+            <string>Par nb invite</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>420</y>
+             <width>221</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;
+text-decoration: underline;</string>
+           </property>
+           <property name="text">
+            <string>Choisir le type de TRI :</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="radioButton_nom">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>460</y>
+             <width>171</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton {
+background-color:rgb(24,24,36);
+color: white;
+font:bold;
+}
+
+QRadioButton::indicator {
+width: 11px;
+height: 11px;
+border-radius: 5px;
+}
+
+QRadioButton::indicator::unchecked{ 
+border: 1px solid; 
+border-color: rgb(132,132,132);
+border-radius: 5px;
+background-color: white; 
+width: 11px; 
+height: 11px; 
+}
+
+QRadioButton::indicator::checked{ 
+border: 3px solid; 
+border-color: white;
+border-radius: 6px;
+background-color: #FF5D5D; 
+width: 7px; 
+height: 7px; 
+}</string>
+           </property>
+           <property name="text">
+            <string>Par nom</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_trier_vrai">
+           <property name="geometry">
+            <rect>
+             <x>430</x>
+             <y>400</y>
+             <width>100</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{ 
+background-color: #FF5D5D;
+ border-style: solid;
+ border-width:5px;
+ border-radius:50px;
+ border-color:white ;
+ max-width:80px;
+ max-height:80px;
+ min-width:80px;
+ min-height:80px;
+
+color: #ffffff;
+	font-size: 15px;
+	font-weight: bold;
+
+	padding: 5px;
+}
+QPushButton::hover
+{
+background-color: white;
+border-color: #FF5D5D;
+	color: #FF5D5D; 
+}
+QPushButton::pressed
+{background-color: qlineargradient(stop:0 rgba(0, 207, 179, 255),stop:1 rgba(70, 255, 230, 255));
+
+	color: black; 
+
+}</string>
+           </property>
+           <property name="text">
+            <string>TRIER</string>
+           </property>
           </widget>
          </widget>
          <widget class="QWidget" name="page_4">
@@ -2335,7 +2813,7 @@ QPushButton::pressed
             <rect>
              <x>40</x>
              <y>180</y>
-             <width>431</width>
+             <width>451</width>
              <height>81</height>
             </rect>
            </property>
@@ -2357,7 +2835,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, st
 }</string>
            </property>
            <property name="text">
-            <string>Taper le CIN de client a supprimer :</string>
+            <string>Taper l'ID d'evenement a supprimer :</string>
            </property>
           </widget>
           <widget class="QPushButton" name="pushButton_supprimer_vrai">
@@ -2413,9 +2891,9 @@ QPushButton::pressed
           <widget class="QLineEdit" name="lineEdit_CIN_EV_supp">
            <property name="geometry">
             <rect>
-             <x>410</x>
+             <x>420</x>
              <y>190</y>
-             <width>251</width>
+             <width>351</width>
              <height>61</height>
             </rect>
            </property>
@@ -2450,10 +2928,10 @@ QLineEdit
         <widget class="QPushButton" name="pushButton_10">
          <property name="geometry">
           <rect>
-           <x>350</x>
-           <y>170</y>
+           <x>340</x>
+           <y>220</y>
            <width>191</width>
-           <height>151</height>
+           <height>61</height>
           </rect>
          </property>
          <property name="styleSheet">
@@ -2542,7 +3020,7 @@ QPushButton::pressed
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>330</y>
+           <y>300</y>
            <width>231</width>
            <height>41</height>
           </rect>
@@ -2572,7 +3050,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, st
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>170</y>
+           <y>160</y>
            <width>231</width>
            <height>41</height>
           </rect>
@@ -2599,18 +3077,18 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, st
           <string>Date d'evenement :</string>
          </property>
         </widget>
-        <widget class="QDateEdit" name="dateEdit_DATE_EV_4">
+        <widget class="QDateTimeEdit" name="dateTimeEdit_DATE_EV_rech">
          <property name="geometry">
           <rect>
            <x>150</x>
-           <y>180</y>
+           <y>170</y>
            <width>221</width>
            <height>26</height>
           </rect>
          </property>
          <property name="styleSheet">
           <string notr="true">/*-----QLineEdit-----*/
-QDateEdit
+QDateTimeEdit
 {
 	background-color: #c2c7d5;
 	color: #000;
@@ -2621,12 +3099,32 @@ QDateEdit
 
 }</string>
          </property>
+         <property name="dateTime">
+          <datetime>
+           <hour>0</hour>
+           <minute>0</minute>
+           <second>0</second>
+           <year>2023</year>
+           <month>1</month>
+           <day>1</day>
+          </datetime>
+         </property>
+         <property name="minimumDateTime">
+          <datetime>
+           <hour>0</hour>
+           <minute>0</minute>
+           <second>0</second>
+           <year>2023</year>
+           <month>1</month>
+           <day>1</day>
+          </datetime>
+         </property>
         </widget>
         <widget class="QLabel" name="label_type_ev_rech">
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>250</y>
+           <y>230</y>
            <width>261</width>
            <height>41</height>
           </rect>
@@ -2656,7 +3154,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, st
          <property name="geometry">
           <rect>
            <x>150</x>
-           <y>340</y>
+           <y>310</y>
            <width>221</width>
            <height>26</height>
           </rect>
@@ -2682,7 +3180,7 @@ QLineEdit
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>90</y>
+           <y>370</y>
            <width>231</width>
            <height>41</height>
           </rect>
@@ -2712,7 +3210,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, st
          <property name="geometry">
           <rect>
            <x>150</x>
-           <y>100</y>
+           <y>380</y>
            <width>221</width>
            <height>26</height>
           </rect>
@@ -2738,7 +3236,7 @@ QLineEdit
          <property name="geometry">
           <rect>
            <x>150</x>
-           <y>260</y>
+           <y>240</y>
            <width>221</width>
            <height>26</height>
           </rect>
@@ -2763,8 +3261,8 @@ QLineEdit
         <widget class="QPushButton" name="pushButton_chercher_vrai">
          <property name="geometry">
           <rect>
-           <x>140</x>
-           <y>400</y>
+           <x>580</x>
+           <y>30</y>
            <width>100</width>
            <height>100</height>
           </rect>
@@ -2816,120 +3314,10 @@ QPushButton::pressed
           <string>CHERCHER</string>
          </property>
         </widget>
-        <widget class="QTableWidget" name="tableWidget">
-         <property name="geometry">
-          <rect>
-           <x>380</x>
-           <y>80</y>
-           <width>501</width>
-           <height>301</height>
-          </rect>
-         </property>
-         <column>
-          <property name="text">
-           <string>Type d'evenement :</string>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>7</pointsize>
-            <bold>true</bold>
-           </font>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Date d'evenement :</string>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>7</pointsize>
-            <bold>true</bold>
-           </font>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Nom d'evenement :</string>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>7</pointsize>
-            <bold>true</bold>
-           </font>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>CIN Client :</string>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>7</pointsize>
-            <bold>true</bold>
-           </font>
-          </property>
-         </column>
-        </widget>
-        <widget class="QPushButton" name="pushButton_trier_vrai">
-         <property name="geometry">
-          <rect>
-           <x>580</x>
-           <y>400</y>
-           <width>100</width>
-           <height>100</height>
-          </rect>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>100</width>
-           <height>100</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>100</width>
-           <height>100</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton{ 
-background-color: #FF5D5D;
- border-style: solid;
- border-width:5px;
- border-radius:50px;
- border-color:white ;
- max-width:80px;
- max-height:80px;
- min-width:80px;
- min-height:80px;
-
-color: #ffffff;
-	font-size: 15px;
-	font-weight: bold;
-
-	padding: 5px;
-}
-QPushButton::hover
-{
-background-color: white;
-border-color: #FF5D5D;
-	color: #FF5D5D; 
-}
-QPushButton::pressed
-{background-color: qlineargradient(stop:0 rgba(0, 207, 179, 255),stop:1 rgba(70, 255, 230, 255));
-
-	color: black; 
-
-}</string>
-         </property>
-         <property name="text">
-          <string>TRIER</string>
-         </property>
-        </widget>
         <widget class="QLabel" name="label_6">
          <property name="geometry">
           <rect>
-           <x>50</x>
+           <x>30</x>
            <y>30</y>
            <width>321</width>
            <height>41</height>
@@ -2944,154 +3332,213 @@ text-decoration: underline;</string>
           <string>Taper les elements a chercher :</string>
          </property>
         </widget>
-        <widget class="QLabel" name="label_7">
+        <widget class="QLineEdit" name="lineEdit_ID_EV_rech">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>100</y>
+           <width>221</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 2px;
+	padding: 3px;
+
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_id_ev_rech">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>90</y>
+           <width>231</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">/*-----QLabel-----*/
+QLabel
+{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(0,0,0,0));
+
+
+
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+	border: 5px;
+	border-radius:10px;
+	padding: 5px;
+
+}</string>
+         </property>
+         <property name="text">
+          <string>ID d'evenement :</string>
+         </property>
+        </widget>
+        <widget class="QTableView" name="tableView_rech_tri">
          <property name="geometry">
           <rect>
            <x>380</x>
-           <y>10</y>
-           <width>191</width>
-           <height>51</height>
+           <y>150</y>
+           <width>511</width>
+           <height>351</height>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">color: rgb(255, 255, 255);
-font: 700 10pt &quot;Segoe UI&quot;;
-text-decoration: underline;</string>
-         </property>
-         <property name="text">
-          <string>Choisir le type de TRI :</string>
+          <string notr="true">/*-----QTableView-----*/
+
+QTableView
+{
+    background-color: rgb(255, 93,93);
+    border: 7px solid #0ab19a;
+    color: #f0f0f0;
+    gridline-color: #232939;
+    outline : 0;
+
+}
+
+
+QTableView::disabled
+{
+    background-color: #242526;
+    border: 1px solid #32414B;
+    color: #656565;
+    gridline-color: #656565;
+    outline : 0;
+
+}
+QTableView::item
+{
+font-size: 13px;
+font-weight: bold;
+color: white;
+
+
+}
+
+QTableView::item:hover 
+{
+    background-color: #606060;
+    color: #f0f0f0;
+
+}
+
+
+QTableView::item:selected 
+{
+	background-color: #0ab19a;
+    color: #F0F0F0;
+
+}
+
+
+QTableView::item:selected:disabled
+{
+    background-color: #1a1b1c;
+    border: 2px solid #525251;
+    color: #656565;
+
+}
+
+QScrollBar:vertical 
+{
+    background-color: transparent;
+    width: 8px;
+    margin: 0;
+
+}
+
+/*-----QScrollBar-----*/
+QScrollBar::handle:vertical 
+{
+    border: none;
+	min-height: 100px;
+    background-color: #56576c;
+
+}
+
+
+QScrollBar::add-line:vertical, 
+QScrollBar::sub-line:vertical,
+QScrollBar::add-page:vertical, 
+QScrollBar::sub-page:vertical 
+{
+    height: 0px;
+    background-color: transparent;
+
+}</string>
          </property>
         </widget>
-        <widget class="QRadioButton" name="radioButton">
+        <widget class="QLineEdit" name="lineEdit_NB_EV_rech">
          <property name="geometry">
           <rect>
-           <x>580</x>
-           <y>10</y>
-           <width>171</width>
-           <height>16</height>
+           <x>150</x>
+           <y>450</y>
+           <width>221</width>
+           <height>26</height>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">QRadioButton {
-background-color:rgb(24,24,36);
-color: white;
-font:bold;
-}
+          <string notr="true">/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: #c2c7d5;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	border-radius: 2px;
+	padding: 3px;
 
-QRadioButton::indicator {
-width: 11px;
-height: 11px;
-border-radius: 5px;
-}
-
-QRadioButton::indicator::unchecked{ 
-border: 1px solid; 
-border-color: rgb(132,132,132);
-border-radius: 5px;
-background-color: white; 
-width: 11px; 
-height: 11px; 
-}
-
-QRadioButton::indicator::checked{ 
-border: 3px solid; 
-border-color: white;
-border-radius: 6px;
-background-color:#FF5D5D; 
-width: 7px; 
-height: 7px; 
 }</string>
          </property>
          <property name="text">
-          <string>Ordre alphabetique</string>
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>8</number>
          </property>
         </widget>
-        <widget class="QRadioButton" name="radioButton_2">
+        <widget class="QLabel" name="label_nb_ev_rech">
          <property name="geometry">
           <rect>
-           <x>580</x>
-           <y>30</y>
-           <width>171</width>
-           <height>16</height>
+           <x>0</x>
+           <y>440</y>
+           <width>221</width>
+           <height>41</height>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">QRadioButton {
-background-color:rgb(24,24,36);
-color: white;
-font:bold;
-}
+          <string notr="true">/*-----QLabel-----*/
+QLabel
+{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.511, x2:1, y2:0.511, stop:0 rgba(0, 172, 149, 255),stop:0.995192 rgba(0,0,0,0));
 
-QRadioButton::indicator {
-width: 11px;
-height: 11px;
-border-radius: 5px;
-}
 
-QRadioButton::indicator::unchecked{ 
-border: 1px solid; 
-border-color: rgb(132,132,132);
-border-radius: 5px;
-background-color: white; 
-width: 11px; 
-height: 11px; 
-}
 
-QRadioButton::indicator::checked{ 
-border: 3px solid; 
-border-color: white;
-border-radius: 6px;
-background-color: #FF5D5D; 
-width: 7px; 
-height: 7px; 
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+	border: 5px;
+	border-radius:10px;
+	padding: 5px;
+
 }</string>
          </property>
          <property name="text">
-          <string>Par date</string>
-         </property>
-        </widget>
-        <widget class="QRadioButton" name="radioButton_3">
-         <property name="geometry">
-          <rect>
-           <x>580</x>
-           <y>50</y>
-           <width>171</width>
-           <height>16</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QRadioButton {
-background-color:rgb(24,24,36);
-color: white;
-font:bold;
-}
-
-QRadioButton::indicator {
-width: 11px;
-height: 11px;
-border-radius: 5px;
-}
-
-QRadioButton::indicator::unchecked{ 
-border: 1px solid; 
-border-color: rgb(132,132,132);
-border-radius: 5px;
-background-color: white; 
-width: 11px; 
-height: 11px; 
-}
-
-QRadioButton::indicator::checked{ 
-border: 3px solid; 
-border-color: white;
-border-radius: 6px;
-background-color: #FF5D5D; 
-width: 7px; 
-height: 7px; 
-}</string>
-         </property>
-         <property name="text">
-          <string>CIN Client</string>
+          <string>Nombre d'invite :</string>
          </property>
         </widget>
        </widget>
@@ -3231,7 +3678,7 @@ height: 7px;
             <number>0</number>
            </property>
            <item>
-            <widget class="QPushButton" name="pushButton_2">
+            <widget class="QPushButton" name="pushButton_HELP">
              <property name="text">
               <string/>
              </property>
