@@ -4,6 +4,7 @@
 #include"fourniseur.h"
 #include <QMainWindow>
 #include <QFileDialog>
+//zaykaaa
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
