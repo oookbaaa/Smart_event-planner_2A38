@@ -11,6 +11,7 @@
 #include <QPrinter>
 #include <QTextStream>
 #include <QTextDocument>
+//test conection github.
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -449,7 +450,7 @@ void MainWindow::on_pushButton_monatnt_fact_clicked()
                quntite =quntite/4;
 
             }else{
-                quntite= quntite;
+                quntite= quntite*1;
             }
             montant=quntite*prix;
             qDebug() << montant ;

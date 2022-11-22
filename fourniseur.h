@@ -3,6 +3,7 @@
 #include<QString>
 #include<QSqlQuery>
 #include<QSqlQueryModel>
+//test conection github.
 
 class Fourniseur
 {

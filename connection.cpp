@@ -1,5 +1,5 @@
 #include "connection.h"
-//test conection github
+//test conection github.
 
 Connection::Connection()
 {

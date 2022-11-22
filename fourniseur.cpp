@@ -1,6 +1,7 @@
 #include "fourniseur.h"
 #include<QSqlQuery>
 #include<QtDebug>
+//test conection github.
 Fourniseur::Fourniseur()
 {
 id=0; num_t=0; nom_f=""; produit="";prix=0;

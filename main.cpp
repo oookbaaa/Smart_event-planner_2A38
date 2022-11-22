@@ -4,7 +4,7 @@
 #include "QApplication"
 #include <QApplication>
 #include <QDebug>
-
+//test conection github.
 
 int main(int argc, char *argv[])
 {

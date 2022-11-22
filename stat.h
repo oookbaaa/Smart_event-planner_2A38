@@ -1,5 +1,6 @@
 #ifndef STAT_H
 #define STAT_H
+//test conection github.
 
 #include <QDialog>
 #include <QGridLayout>

@@ -15,6 +15,7 @@
 #include <QtCharts/QLineSeries>
 #include <qwindow.h>
 #include <QChartView>
+//test conection github.
 statistiques::statistiques(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::statistiques)

@@ -5,6 +5,7 @@
 #include <QMainWindow>
 #include <QFileDialog>
 //zaykaaa
+//test conection github.
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
